@@ -1,0 +1,70 @@
+body{
+    position: relative
+  }
+  /* .slider-1, .slider-2, .slider-3, .slider-4{
+    height: 80vh;
+    
+  }
+  .slider-1{
+    background: #700961;
+  } */
+  .fondo {
+    height: 100vh; 
+    background: url('../img/img-fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fondoEmpresa {
+    height: auto; 
+    background: url('../img/img-fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .verde1{
+    background: rgba(0, 128, 0, 0.199);
+  }
+
+  .top-nav-collapse{
+    background: rgb(0, 105,92) !important;
+  }
+  
+  /* Estilos de maps */
+  .map-container {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+  }
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  /* Fin de estilos de Maps */
+
+  /* Estilos de carousel -Marcas que trabajamos- */
+  .carousel-multi-item.v-2 .carousel-inner .carousel-item.active,
+  .carousel-multi-item.v-2 .carousel-item-next,
+  .carousel-multi-item.v-2 .carousel-item-prev {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .carousel-multi-item.v-2 .carousel-item-right.active,
+  .carousel-multi-item.v-2 .carousel-item-next {
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
+  .carousel-multi-item.v-2 .carousel-item-left.active,
+  .carousel-multi-item.v-2 .carousel-item-prev {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .carousel-multi-item.v-2 .carousel-item-right,
+  .carousel-multi-item.v-2 .carousel-item-left {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+    /* Fin Estilos de carousel -Marcas que trabajamos- */
