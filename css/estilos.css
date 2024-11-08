@@ -16,7 +16,7 @@ body{
   }
   .fondoEmpresa {
     height: auto; 
-    background: url('../img/img-fondo2.jpg');
+    background: url('../img/img-fondo2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
   }
