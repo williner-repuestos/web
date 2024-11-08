@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="134.128mm" height="133.457mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 141.515 140.807"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#1F1A17;stroke-width:0.738555}
+    .str0 {stroke:#1F1A17;stroke-width:2.6377}
+    .str3 {stroke:#1F1A17;stroke-width:3.16524}
+    .str2 {stroke:#DA251D;stroke-width:3.16524}
+    .fil1 {fill:none}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="141.515" height="140.807" rx="34.1723" ry="34.1723"/>
+  <ellipse class="fil1 str0" cx="111.789" cy="85.0848" rx="20.4434" ry="20.4798"/>
+  <ellipse class="fil1 str1" cx="111.727" cy="85.0486" rx="18.2508" ry="18.2833"/>
+  <g id="_99013056">
+   <line id="_99015552" class="fil1 str2" x1="4.67178" y1="34.9903" x2="22.6058" y2= "34.9903" />
+   <path id="_99014088" class="fil1 str2" d="M45.4889 57.3706c-8.81961,9.8384 -18.8723,18.2663 -29.9484,25.525 16.5855,14.4356 35.4225,22.0968 56.5157,22.9851 -6.57778,-11.0113 -12.157,-23.2451 -12.9242,-41.3674"/>
+   <path id="_99013920" class="fil1 str3" d="M85.4603 53.8621l-3.86433 3.50856 0 35.5656c1.03472,4.6568 2.98745,8.00372 6.27983,9.43588"/>
+   <line id="_99013680" class="fil1 str3" x1="86.3061" y1="57.3642" x2="136.3" y2= "57.3642" />
+   <polyline id="_99013632" class="fil1 str3" points="4.67178,34.9903 21.6993,34.9903 45.489,57.3706 81.5961,57.3706 85.4602,53.8621 "/>
+   <path id="_99013392" class="fil1 str3" d="M81.5961 57.3706l0 35.5656c0.949782,4.74785 3.04306,7.89304 6.27972,9.43599"/>
+   <path id="_99013344" class="fil1 str3" d="M45.489 57.3706c-8.77551,9.86087 -18.902,18.208 -29.9485,25.525 16.0385,13.8484 34.6011,22.1187 56.5158,22.9851 -8.01111,-12.8884 -12.448,-26.6462 -12.9243,-41.3674l-14.3018 -6.41277 -0.549063 -0.246255 -21.9783 -13.4281 -14.1288 0"/>
+   <polyline id="_99013104" class="fil1 str3" points="45.489,57.3706 21.6993,34.9903 4.67178,34.9903 "/>
+  </g>
+ </g>
+</svg>
