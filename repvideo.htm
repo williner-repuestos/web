@@ -143,7 +143,7 @@
 
     <!-- Footer con carrusel, contacto y redes sociales -->
     <footer>
-        <div class="footer-carousel"> <img src="imagen/logos/mann-filter.svg" alt="Logo MANN FILTER"> <img src="imagen/logos/LWR-1.svg" alt="Logo Williner Repuestos | Mercado de autopartes"> </div>
+        <div class="footer-carousel"> <img src="img/logos/mann-filter.svg" alt="Logo MANN FILTER"> <img src="img/logos/LWR-1.svg" alt="Logo Williner Repuestos | Mercado de autopartes"> </div>
 
         <div class="text-center mt-3">
             <p><strong>Williner Repuestos | Mercado de Autopartes</strong></p>
@@ -174,10 +174,10 @@
         const ficha = params.get("ficha");
         const tipo = params.get("tipo");
 
-        if (video) document.getElementById("videoPlayer").src = "vid/" + video;
+        if (video) document.getElementById("videoPlayer").src = "vid1/" + video;
         if (codigo) document.getElementById("codigo").textContent = codigo;
         if (aplicacion) document.getElementById("aplicacion").textContent = aplicacion;
-        if (ficha) document.getElementById("downloadFicha").href = "vid/fichas/" + ficha;
+        if (ficha) document.getElementById("downloadFicha").href = "vid1/fichas/" + ficha;
         else document.getElementById("downloadFicha").style.display = "none";
 
         const btn = document.getElementById("downloadFicha");
