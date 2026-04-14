@@ -174,10 +174,10 @@
         const ficha = params.get("ficha");
         const tipo = params.get("tipo");
 
-        if (video) document.getElementById("videoPlayer").src = "vid1/" + video;
+        if (video) document.getElementById("videoPlayer").src = "vid/" + video;
         if (codigo) document.getElementById("codigo").textContent = codigo;
         if (aplicacion) document.getElementById("aplicacion").textContent = aplicacion;
-        if (ficha) document.getElementById("downloadFicha").href = "vid1/fichas/" + ficha;
+        if (ficha) document.getElementById("downloadFicha").href = "vid/fichas/" + ficha;
         else document.getElementById("downloadFicha").style.display = "none";
 
         const btn = document.getElementById("downloadFicha");
