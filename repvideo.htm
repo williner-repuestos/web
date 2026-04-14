@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>¿Cómo sustituir el filtro de tu coche?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffeb3b, #4caf50);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            padding: 20px;
+            text-align: center;
+            color: #1f1a17;
+        }
+
+        .video-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 95%;
+        }
+
+        .badge-custom {
+            background-color: #4caf50;
+            color: #fff;
+            font-size: 0.9rem;
+            margin: 5px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .download-btn {
+            margin-top: 15px;
+        }
+
+        /* Colores dinámicos por tipo de filtro */
+        .btn-habitaculo {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .btn-aire {
+            background-color: #ffeb3b;
+            color: #000;
+        }
+
+        .btn-aceite {
+            background-color: #f57c00;
+            color: #fff;
+        }
+
+        .btn-combustible {
+            background-color: #1976d2;
+            color: #fff;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            color: #fff;
+        }
+
+        .footer-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .footer-carousel img {
+            flex: 0 0 auto;
+            max-height: 60px;
+            margin: 10px;
+            scroll-snap-align: center;
+        }
+
+        .social-icon {
+            font-size: 2rem;
+            color: #fff;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icon:hover .bi-whatsapp {
+            color: #25D366;
+        }
+
+        .social-icon:hover .bi-instagram {
+            color: #E1306C;
+        }
+
+        .social-icon:hover .bi-facebook {
+            color: #1877F2;
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            .video-card {
+                padding: 10px;
+            }
+
+            .badge-custom {
+                font-size: 0.8rem;
+            }
+
+            .download-btn a {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body> <!-- Hero -->
+    <div class="hero">
+        <h1 id="titulo" class="fw-bold">¿Cómo sustituir el filtro de tu coche?</h1>
+    </div>
+
+    <!-- Video Card -->
+    <div class="video-card"> <video id="videoPlayer" class="w-100 rounded" controls></video>
+        <div class="info-section text-center"> <span class="badge-custom">Código MANN FILTER: <span id="codigo"></span></span> <span class="badge-custom">Aplicación: <span id="aplicacion"></span></span> </div> <!-- Botón de descarga -->
+        <div class="download-btn text-center"> <a id="downloadFicha" href="#" class="btn btn-lg" download> 📄 Descargar ficha técnica </a> </div>
+    </div>
+
+    <!-- Footer con carrusel, contacto y redes sociales -->
+    <footer>
+        <div class="footer-carousel"> <img src="imagen/logos/mann-filter.svg" alt="Logo MANN FILTER"> <img src="imagen/logos/LWR-1.svg" alt="Logo Williner Repuestos | Mercado de autopartes"> </div>
+
+        <div class="text-center mt-3">
+            <p><strong>Williner Repuestos | Mercado de Autopartes</strong></p>
+            <p>📍 Ayacucho 555 - Rafaela, Santa Fe, Argentina</p>
+            <p>📞 Tel: +54 3492 241352</p>
+            <p>✉️ Email: williner.repuestos@gmail.com</p>
+        </div>
+
+        <div class="d-flex justify-content-center mt-3">
+            <a href="https://wa.me/543492241352" target="_blank" class="social-icon mx-3">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/willinerrepuestos/" target="_blank" class="social-icon mx-3">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/Williner.Repuestos.Rafaela" target="_blank" class="social-icon mx-3">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const video = params.get("video");
+        const codigo = params.get("codigo");
+        const aplicacion = params.get("aplicacion");
+        const ficha = params.get("ficha");
+        const tipo = params.get("tipo");
+
+        if (video) document.getElementById("videoPlayer").src = "vid/" + video;
+        if (codigo) document.getElementById("codigo").textContent = codigo;
+        if (aplicacion) document.getElementById("aplicacion").textContent = aplicacion;
+        if (ficha) document.getElementById("downloadFicha").href = "vid/fichas/" + ficha;
+        else document.getElementById("downloadFicha").style.display = "none";
+
+        const btn = document.getElementById("downloadFicha");
+        const titulo = document.getElementById("titulo");
+        if (tipo === "habitaculo") {
+            btn.classList.add("btn-habitaculo");
+            titulo.textContent = "🌿 ¿Cómo sustituir el filtro de habitáculo de tu coche?";
+        } else if (tipo === "aire") {
+            btn.classList.add("btn-aire");
+            titulo.textContent = "💨 ¿Cómo sustituir el filtro de aire de tu coche?";
+        } else if (tipo === "aceite") {
+            btn.classList.add("btn-aceite");
+            titulo.textContent = "🛢️ ¿Cómo sustituir el filtro de aceite de tu coche?";
+        } else if (tipo === "combustible") {
+            btn.classList.add("btn-combustible");
+            titulo.textContent = "⛽ ¿Cómo sustituir el filtro de combustible de tu coche?";
+        } else {
+            btn.classList.add("btn-success");
+            titulo.textContent = "¿Cómo sustituir el filtro de tu coche?";
+        }
+    </script>
+</body>
+
+</html>
